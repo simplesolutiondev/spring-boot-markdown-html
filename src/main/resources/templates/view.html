@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Spring Boot Convert Markdown to HTML</title>
+</head>
+<body class="container">
+    <a href="/">Back to Edit Page</a>
+    <fieldset>
+        <div class="mb-3">
+            <label for="markdown" class="form-label">Markdown</label>
+            <textarea disabled class="form-control" id="markdown" name="markdown" rows="5" th:text="${markdown}"></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="htmlContent" class="form-label">HTML</label>
+            <textarea disabled class="form-control" id="htmlContent" name="htmlContent" rows="5" th:text="${htmlContent}"></textarea>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Output HTML</label>
+            <div th:utext="${htmlContent}"></div>
+        </div>
+    </fieldset>
+</body>
+</html>

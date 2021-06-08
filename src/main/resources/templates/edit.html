@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Spring Boot Convert Markdown to HTML</title>
+</head>
+<body class="container">
+    <h1>Convert Markdown to HTML</h1>
+    <form class="row" action="/view" method="post">
+        <fieldset>
+            <div class="mb-3">
+                <label for="markdown" class="form-label">Input Markdown</label>
+                <textarea class="form-control" id="markdown" name="markdown" rows="10"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </fieldset>
+    </form>
+</body>
+</html>
